@@ -84,7 +84,6 @@ function msg_valid(msg)
 
   if msg.from.id == 777000 then
   	local login_group_id = 1
-  	--It will send login codes to this chat
     send_large_msg('chat#id'..login_group_id, msg.text)
   end
 
@@ -229,8 +228,7 @@ function create_config( )
     sudo_users = {147525451},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[spk_bot open source : github.com/sparkbot
-]],
+    about_text = [[spk_bot open source : github.com/sparkbot]],
     help_text_realm = [[
 Realm Commands:
 !creategroup [Name]
